@@ -1,7 +1,7 @@
 function isPalindrome(str)
 {
 	var j = str.length - 1
-		for (var i = 0; i < str.length; i++)
+		for (var i = 0; i < str.length; i++, j--)
 		{
 			while(i < j) {
 				if(str[i] == str[j])
@@ -10,7 +10,6 @@ function isPalindrome(str)
 			}
 	  }
 };
-var str = "put it up"
-isPalindrome(str)
 
 
+isPalindrome("put it up")
